@@ -4,28 +4,16 @@
 	box-sizing: border-box;
 }
 
-body{
-	font-family: Montserrat, "Noto Sans";
-	color: white;
-	background:   
-		radial-gradient(
-			rgba(26, 11, 51, 0.6), /* top */
-			rgba(26, 11, 51, 0.8)  /* bottom */
-		),
-		url("./images/landing_bg.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-}
+
 
 /*NAVBAR*/
 
 #navbar{
-	background-color: #370088;
+	background-color: #003B66;
 }
 
 .navbar-brand{
-	color: white;
+	color: #E0F000;
 	font-weight: bold;
 	font-size: 1.3rem;
 }
@@ -38,16 +26,37 @@ body{
 /*LANDING SECTION*/
 
 #landing{
-	margin-top: 14vh;
+	height: 110vh;
+	font-family: Montserrat, "Noto Sans";
+	color: white;
+	background:   
+		radial-gradient(
+			rgba(0, 49, 84, 0.4), /* top */
+			rgba(0, 49, 84, 1.0)  /* bottom */
+		),
+		url("./images/bg-homepage.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 #landing-img{
 	border: 1px solid white;
 }
 
-.my-name{
-	font-weight: 700;
-	font-size: 2rem;
+#search-bar{
+	background-color: white;
+	color: #003B66;
+	height: 40px;
+	width: 200px;
+	border: none;
+	border-radius: 20px;
+}
+
+#menu-title{
+	color: #003B66;
+	font-size: 0.7rem;
+	font-weight: bold;
 }
 
 .my-title{

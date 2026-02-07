@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,110 +16,96 @@
         <link rel="stylesheet" type="text/css" href="index.css">
 
     </head>
+
  
-    <body class="row">
+    <body>
 
-        <nav class="container-fluid navbar navbar-expand-lg fixed-top px-md-5 px-1" id="navbar">
-          <div class="container" >
+<!-- Navbar -->
 
-            <a class="navbar-brand" href="#" id="logo">G3 Airlines</a>
-            <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-        
-  
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav gap-4 ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#landing">Search Flight</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">Book Flight</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#tools">Resources</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Signup</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+   <nav id="navbar" class="fixed-top">
+     <div class="container-fluid p-2">
+       <a class="navbar-brand" id="navbar-brand" href="#">
+         <img src="./images/logo_E0F000.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+         G3 Airlines
+       </a>
+   </nav>
 
 <!-- LANDING SECTION -->
 
-        <div class="container-fluid text-center align-content-center " id="landing">
+    <div class="container-fluid" id="landing">
 
-            <div class="row justify-content-center gap-3">
+        <div class="row justify-content-center">
+          
+            <div class="col-12 col-md-5 col-lg-6 text-lg-start my-lg-auto">               
+                 <div class="row pt-5">
+                    <div class="col-11 col-md-12 mx-auto text-md-start pt-4">
+                        <h1 class="my-name">Discover Your <br> Next Adventure</h1>
+                        <p class="aboutme pt-3">Find your dream destination <br> with pure exceptional flight offer.</p>
+                    </div>  
 
-                <div class="col-8 col-md-5 col-lg-4" >
-                     <div class="justify-content-center" >
-                        <img src="./images/my-pic.png" class="img-fluid rounded-circle" id="landing-img">
-                    </div>
-                </div>    
-                
-                <div class="col-12 col-md-5 col-lg-6 text-lg-start my-lg-auto">               
-                     <div class="row">
-                        <div class="col-11 col-md-12 mx-auto text-md-start">
-                            <h1 class="my-name">G3 Airlines</h1>
-                            <h3 class="my-title">Airline Booking System</h3>
-                            <p class="aboutme pt-2">Discover Your Next Flight Destination</p>
+                    <p class="d-inline-flex gap-1 mt-3 ms-3">
+                      <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true" id="search-bar">Search Flights</button>
+                    </p> 
+
+                    <div>
+                        <div class="row justify-content-center gap-3 pt-5">
+
+                            <div class="card p-0" style="width: 9rem;">
+                              <div class="card-body text-center">
+                                <img src="./images/icon-book_flight.png">
+                                <p class="card-text" id="menu-title">Book a Flight</p>
+                              </div>
+                            </div>
+
+                            <div class="card p-0" style="width: 9rem;">
+                              <div class="card-body text-center">
+                                <img src="./images/icon-booking.png">
+                                <p class="card-text" id="menu-title">Manage Booking</p>
+                              </div>
+                            </div>
+
+                            <div class="card p-0" style="width: 9rem;">
+                              <div class="card-body text-center">
+                                <img src="./images/icon-checkin.png">
+                                <p class="card-text" id="menu-title">Check-in</p>
+                              </div>
+                            </div>
+
+                            <div class="card p-0" style="width: 9rem;">
+                              <div class="card-body text-center">
+                                <img src="./images/icon-status.png">
+                                <p class="card-text" id="menu-title">Flight Status</p>
+                              </div>
+                            </div>                        
                         </div>
+                    </div>
 
-                        <div class="col-12 col-md-12 text-md-start text-lg-start">
-                            <a class="btn btn-primary" href="#contact" role="button" id="landing-button">Book Now</a>
-                        </div>    
-                    </div>                                        
-                </div>
-    
+                    
+
+                </div> 
+
             </div>
 
-<!-- PROJECTS SECTION -->
-
-        <div class="container-fluid my-5" id="projects">
-            <div class="row text-center">
-                <h1 class="mt-5" id="project-title">Search Flight</h1>
-                <div class="col-12 mt-4 mb-5">
-                    <div class="row justify-content-center gap-4">
-                        <div class="col-12 col-md-5 col-lg-3 justify-content-center">
-                            <div class="card img-fluid mx-auto" id="proj-card">
-                              <img src="./images/card-eei.png" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-5 col-lg-3">
-                            <div class="card img-fluid mx-auto" id="proj-card">
-                              <img src="./images/card-ofc.png" class="card-img-top img-fluid" alt="...">
-                              <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-5 col-lg-3">
-                            <div class="card img-fluid mx-auto" id="proj-card">
-                              <img src="./images/card-pac.png" class="card-img-top img-fluid" alt="...">
-                              <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-
-                        
-                        
-                    </div>
-                </div>
-                
-            </div>
         </div>
 
-<!-- TOOLS SECTION -->
+    </div>
+
+
+
+
+
+<!-- MENU SECTION -->
+
+
+
+
+
+
+
+ 
+
+
+<!-- TOOLS SECTION 
  
         <div class="container-fluid" id="tools">
             <div class="mt-5">
@@ -160,9 +147,9 @@
       
             </div>
         </div> 
-  
+--> 
 
-<!-- CONTACT SECTION -->
+<!-- CONTACT SECTION 
 
         <div class="container my-5" id="contact">
             <div class="row justify-content-center gap-2 mt-5 mb-5">
@@ -192,9 +179,8 @@
                           <textarea class="form-control" id="contact-textarea" rows="3"></textarea>
                         </div>
 
-                        <div class="text-center">
-                           <!-- <button class="my-4 btn" id="contact-form-button"><a href="https://www.google.com/"></a>Send 
-                           </button>-->  
+
+                        <div class="text-center">  
                            <a class="btn btn-primary my-4 contact-form-button" href="https://www.google.com/" role="button">Submit</a>
                         </div>
                                                                                        
@@ -209,8 +195,9 @@
           ↑
         </button>
 
-
+-->
         <script>
+        /*
           const btn = document.getElementById("backToTop");
 
           window.addEventListener("scroll", function () {
@@ -224,8 +211,10 @@
           btn.addEventListener("click", function () {
             window.scrollTo({ top: 0, behavior: "smooth" });
           });
-        </script>
 
+        */
+        </script>
+<!--  
         <div class="container-fluid" id="footer">
             <div class="d-flex gap-3 justify-content-center py-3">
                 <div>2025</div>
@@ -233,7 +222,7 @@
                 <div>All rights reserved.</div>
             </div>
         </div>
-
+-->
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
