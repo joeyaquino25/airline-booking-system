@@ -12,6 +12,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Macondo&family=MedievalSharp&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap" rel="stylesheet">
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> <!-- for icons -->
+
+
         <link rel="stylesheet" type="text/css" href="index.css">
 
     </head>
@@ -19,7 +22,7 @@
     <body class="row">
 
         <nav class="container-fluid navbar navbar-expand-lg fixed-top px-md-5 px-1" id="navbar">
-          <div class="container" >
+          <div class="container" >  
 
             <a class="navbar-brand" href="#" id="logo">G3 Airlines</a>
             <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,196 +47,166 @@
               </ul>
             </div>
           </div>
-        </nav>
+        </nav> 
 
-<!-- LANDING SECTION -->
+<!--  -->
 
-        <div class="container-fluid text-center align-content-center " id="landing">
+<div class="container-fluid mt-3 pt-5" id="book-flight">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+    <span class="bi bi-airplane-fill me-2 fs-4 text-primary"></span>
+      <h4 class="mb-4 text-start">Book a flight</h4>
 
-            <div class="row justify-content-center gap-3">
 
-                <div class="col-8 col-md-5 col-lg-4" >
-                     <div class="justify-content-center" >
-                        <img src="./images/my-pic.png" class="img-fluid rounded-circle" id="landing-img">
-                    </div>
-                </div>    
-                
-                <div class="col-12 col-md-5 col-lg-6 text-lg-start my-lg-auto">               
-                     <div class="row">
-                        <div class="col-11 col-md-12 mx-auto text-md-start">
-                            <h1 class="my-name">G3 Airlines</h1>
-                            <h3 class="my-title">Airline Booking System</h3>
-                            <p class="aboutme pt-2">Discover Your Next Flight Destination</p>
-                        </div>
+      <!-- Trip type -->
+      <div class="row mb-4 mt-5">
+        <div class="col text-center fw-bold border-bottom pb-2">
+          Round-trip
+        </div>
+        <div class="col text-center text-muted">
+          One-way
+        </div>
+      </div>
 
-                        <div class="col-12 col-md-12 text-md-start text-lg-start">
-                            <a class="btn btn-primary" href="#contact" role="button" id="landing-button">Book Now</a>
-                        </div>    
-                    </div>                                        
-                </div>
-    
-            </div>
-
-<!-- PROJECTS SECTION -->
-
-        <div class="container-fluid my-5" id="projects">
-            <div class="row text-center">
-                <h1 class="mt-5" id="project-title">Search Flight</h1>
-                <div class="col-12 mt-4 mb-5">
-                    <div class="row justify-content-center gap-4">
-                        <div class="col-12 col-md-5 col-lg-3 justify-content-center">
-                            <div class="card img-fluid mx-auto" id="proj-card">
-                              <img src="./images/card-eei.png" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-5 col-lg-3">
-                            <div class="card img-fluid mx-auto" id="proj-card">
-                              <img src="./images/card-ofc.png" class="card-img-top img-fluid" alt="...">
-                              <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-5 col-lg-3">
-                            <div class="card img-fluid mx-auto" id="proj-card">
-                              <img src="./images/card-pac.png" class="card-img-top img-fluid" alt="...">
-                              <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-
-                        
-                        
-                    </div>
-                </div>
-                
-            </div>
+      <!-- From / To -->
+      <div class="row g-2 mb-4 text-center text-dark">
+        <div class="col-md-6">
+          <div class="p-3 bg-light border rounded">
+            <small class="text">From</small>
+            <div class="fw-bold">Manila MNL</div>
+          </div>
         </div>
 
-<!-- TOOLS SECTION -->
- 
-        <div class="container-fluid" id="tools">
-            <div class="mt-5">
-                <h1 class="text-center" id="tools-title">My Tools</h1>                
-            </div>   
-
-            <div class="row px-3 justify-content-center gap-5 mb-5 mt-4">
-
-                <div class="col-12 col-md-5 pt-md-4">
-                    <h3 class="text-center">Front End</h3> 
-              
-                     <div class="d-flex justify-content-center pt-2 gap-3">
-                        <img src="./images/logo-html.png" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-css.png" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-bootstrap.png" class="img-fluid" id="tools-image">
-                    </div>
-                     <div class="d-flex justify-content-center pt-3 gap-3">
-                        <img src="./images/logo-figma.png" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-trello.png" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-sublime.png" class="img-fluid" id="tools-image">                       
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-5 pt-md-4">
-                    <h3 class="text-center">Graphics</h3> 
-                
-                     <div class="d-flex justify-content-center pt-2 gap-3">
-                        <img src="./images/logo-psd.jpg" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-light.png" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-blender.png" class="img-fluid" id="tools-image">
-                    </div>
-                     <div class="d-flex justify-content-center pt-3 gap-3">
-                        <img src="./images/logo-cdr.png" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-vsco.png" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-canva.jpg" class="img-fluid" id="tools-image">                       
-                    </div>
-                </div>
-
-      
-            </div>
-        </div> 
-  
-
-<!-- CONTACT SECTION -->
-
-        <div class="container my-5" id="contact">
-            <div class="row justify-content-center gap-2 mt-5 mb-5">
-                <div class="col-10 order-2 order-md-1 col-md-5 my-1" id="contact-map-area">
-                    <img src="./images/contact-map.png" class="img-fluid" id="contact-map-image">
-                </div>
-
-                <div class="col-10 order-1 order-md-2 col-md-5 my-1 " id="contact-form-area">
-
-                    <form  class="px-3 pt-3 mx-auto align-items-center" id="contact-form">   
-
-                        <h2>Contact Me</h2> 
-                        <p>Please let me know how I can help you.</p>
-                     
-                        <div>
-                          <label for="exampleFormControlInput1" class="form-label">Name</label>
-                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
-                        </div>
-
-                        <div class="pt-1">
-                          <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="your.email@gmail.com">
-                        </div>
-
-                        <div class="pt-1 mb-2">
-                          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                          <textarea class="form-control" id="contact-textarea" rows="3"></textarea>
-                        </div>
-
-                        <div class="text-center">
-                           <!-- <button class="my-4 btn" id="contact-form-button"><a href="https://www.google.com/"></a>Send 
-                           </button>-->  
-                           <a class="btn btn-primary my-4 contact-form-button" href="https://www.google.com/" role="button">Submit</a>
-                        </div>
-                                                                                       
-                    </form>
-
-                </div>               
-            </div>
+        <div class="col-md-6">
+          <div class="p-3 bg-light border rounded">
+            <small>To</small>
+            <div class="fw-bold">Osaka (Kansai)</div>
+          </div>
         </div>
+      </div>
 
-     
-        <button id="backToTop" class="btn btn-primary rounded-circle">
-          ↑
+      <!-- Date -->
+      <!-- Date -->
+      <div class="mb-3 position-relative">
+        <span class="input-icon">
+          <span class="bi bi-calendar-event"></span>
+        </span>
+        <select class="form-select ps-5">
+          <option selected>Jun 14, 2024 – Jun 20, 2024</option>
+          <option>Jun 21, 2024 – Jun 27, 2024</option>
+          <option>Jul 1, 2024 – Jul 7, 2024</option>
+        </select>
+      </div>
+
+      <!-- Passengers -->
+      <div class="mb-3 position-relative">
+        <span class="input-icon">
+          <span class="bi bi-people"></span>
+        </span>
+        <select class="form-select ps-5">
+          <option selected>2 passengers</option>
+          <option>1 passenger</option>
+          <option>3 passengers</option>
+          <option>4 passengers</option>
+        </select>
+      </div>
+
+      <!-- Class -->
+      <div class="mb-4 position-relative">
+        <span class="input-icon">
+          <span class="bi bi-briefcase"></span>
+        </span>
+        <select class="form-select ps-5">
+          <option selected>Economy</option>
+          <option>Premium Economy</option>
+          <option>Business</option>
+          <option>First Class</option>
+        </select>
+      </div>
+
+
+      <!-- Continue Button -->
+      <div class="text-end mt-5">
+        <button class="btn btn-primary px-4 rounded-pill p-2">
+          Continue <span class="bi bi-arrow-right"></span>
         </button>
 
 
-        <script>
-          const btn = document.getElementById("backToTop");
+      </div>
 
-          window.addEventListener("scroll", function () {
-            if (window.scrollY > 150) {
-              btn.style.display = "flex";
-            } else {
-              btn.style.display = "none";
-            }
-          });
+    </div>
+  </div>
+</div>
 
-          btn.addEventListener("click", function () {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          });
-        </script>
 
-        <div class="container-fluid" id="footer">
+<!-- FOOTER -->
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <!-- Quick Links -->
+      <div class="col-sm-6 mb-3">
+        <h6 class="fw-bold">Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Flights</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Hotels</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-sm-6 mb-3">
+        <h6 class="fw-bold">Contact</h6>
+        <p class="small mb-1"><i class="bi bi-geo-alt"></i> 123 Main St, Manila</p>
+        <p class="small mb-1"><i class="bi bi-telephone"></i> +63 912 345 6789</p>
+        <p class="small"><i class="bi bi-envelope"></i> example@travelly.com</p>
+      </div>
+
+    </div>
+
+    <hr class="bg-light">
+
+    <div class="text-center small">
+      &copy; 2026 Travelly. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+             
+
+
+
+     
+    <button id="backToTop" class="btn btn-primary rounded-circle">
+      ↑
+    </button> 
+
+
+    <script>
+      const btn = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 150) {
+          btn.style.display = "flex";
+        } else {
+          btn.style.display = "none";
+        }
+      });
+
+      btn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+
+        <!-- <div class="container-fluid" id="footer">
             <div class="d-flex gap-3 justify-content-center py-3">
                 <div>2025</div>
                 <div>|</div>
                 <div>All rights reserved.</div>
             </div>
         </div>
-
+ -->
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
