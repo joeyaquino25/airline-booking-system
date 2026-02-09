@@ -26,7 +26,7 @@
 /*LANDING SECTION*/
 
 #landing{
-	height: 90vh;
+	height: 100vh;
 	font-family: Montserrat, "Noto Sans";
 	color: white;
 	background:   
@@ -34,28 +34,30 @@
 			rgba(0, 49, 84, 0.2), /* top */
 			rgba(0, 49, 84, 1.0)  /* bottom */
 		),
-		url("./images/bg-homepage.jpg");
+		url("./images/bg-homepage_japan.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
 
-#landing-img{
-	border: 1px solid white;
+.landing-title {
+	font-size: 3.0rem;
+	font-weight: bold;
 }
 
 #search-bar{
 	background-color: white;
 	color: #003B66;
-	height: 40px;
-	width: 200px;
+	font-size: 1.5rem;
+	height: 50px;
+	width: 500px;
 	border: none;
-	border-radius: 20px;
+	border-radius: 25px;
 }
 
 #menu-title{
 	color: #003B66;
-	font-size: 0.7rem;
+
 	font-weight: bold;
 }
 

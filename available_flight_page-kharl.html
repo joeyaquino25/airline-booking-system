@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>G3 Airlines</title> 
+        <title>Available Flights - G3 Airlines</title> <!-- Updated title -->
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" type="text/css" href="index.css">
 
+        
     </head>
  
     <body class="row">
@@ -30,10 +31,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav gap-4 ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="#landing">Search Flight</a>
+                  <a class="nav-link" href="homepage-joey.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#projects">Book Flight</a>
+                  <a class="nav-link" href="#flight-search">Search Flight</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#available-flights">Available Flights</a> <!-- Updated link -->
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#tools">Resources</a>
@@ -46,164 +50,379 @@
           </div>
         </nav>
 
-<!-- LANDING SECTION -->
-
-        <div class="container-fluid text-center align-content-center " id="landing">
-
-            <div class="row justify-content-center gap-3">
-
-                <div class="col-8 col-md-5 col-lg-4" >
-                     <div class="justify-content-center" >
-                        <img src="./images/my-pic.png" class="img-fluid rounded-circle" id="landing-img">
-                    </div>
-                </div>    
+<!-- FLIGHT SEARCH SECTION --> <!-- Updated from landing section -->
+        <div class="container-fluid flight-search-section" id="flight-search">
+            <div class="container">
+                <h1 class="text-center mb-4">Find Your Perfect Flight</h1>
                 
-                <div class="col-12 col-md-5 col-lg-6 text-lg-start my-lg-auto">               
-                     <div class="row">
-                        <div class="col-11 col-md-12 mx-auto text-md-start">
-                            <h1 class="my-name">G3 Airlines</h1>
-                            <h3 class="my-title">Airline Booking System</h3>
-                            <p class="aboutme pt-2">Discover Your Next Flight Destination</p>
-                        </div>
-
-                        <div class="col-12 col-md-12 text-md-start text-lg-start">
-                            <a class="btn btn-primary" href="#contact" role="button" id="landing-button">Book Now</a>
-                        </div>    
-                    </div>                                        
-                </div>
-    
-            </div>
-
-<!-- PROJECTS SECTION -->
-
-        <div class="container-fluid my-5" id="projects">
-            <div class="row text-center">
-                <h1 class="mt-5" id="project-title">Search Flight</h1>
-                <div class="col-12 mt-4 mb-5">
-                    <div class="row justify-content-center gap-4">
-                        <div class="col-12 col-md-5 col-lg-3 justify-content-center">
-                            <div class="card img-fluid mx-auto" id="proj-card">
-                              <img src="./images/card-eei.png" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-5 col-lg-3">
-                            <div class="card img-fluid mx-auto" id="proj-card">
-                              <img src="./images/card-ofc.png" class="card-img-top img-fluid" alt="...">
-                              <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-5 col-lg-3">
-                            <div class="card img-fluid mx-auto" id="proj-card">
-                              <img src="./images/card-pac.png" class="card-img-top img-fluid" alt="...">
-                              <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                              </div>
-                            </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div class="search-form-card">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <label for="from" class="form-label">From</label>
+                                        <select class="form-select" id="from">
+                                            <option selected>Select departure city</option>
+                                            <option value="JFK">New York (JFK)</option>
+                                            <option value="LAX">Los Angeles (LAX)</option>
+                                            <option value="ORD">Chicago (ORD)</option>
+                                            <option value="DFW">Dallas (DFW)</option>
+                                            <option value="MIA">Miami (MIA)</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <label for="to" class="form-label">To</label>
+                                        <select class="form-select" id="to">
+                                            <option selected>Select destination city</option>
+                                            <option value="LHR">London (LHR)</option>
+                                            <option value="CDG">Paris (CDG)</option>
+                                            <option value="FRA">Frankfurt (FRA)</option>
+                                            <option value="DXB">Dubai (DXB)</option>
+                                            <option value="HND">Tokyo (HND)</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="col-12 col-md-6 col-lg-2">
+                                        <label for="departure" class="form-label">Departure</label>
+                                        <input type="date" class="form-control" id="departure" value="2025-06-15">
+                                    </div>
+                                    
+                                    <div class="col-12 col-md-6 col-lg-2">
+                                        <label for="return" class="form-label">Return</label>
+                                        <input type="date" class="form-control" id="return" value="2025-06-22">
+                                    </div>
+                                    
+                                    <div class="col-12 col-md-6 col-lg-2 d-flex align-items-end">
+                                        <button type="submit" class="btn search-btn w-100">Search Flights</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-3">
+                                    <div class="col-12">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="tripType" id="oneWay" value="oneWay">
+                                            <label class="form-check-label" for="oneWay">One Way</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="tripType" id="roundTrip" value="roundTrip" checked>
+                                            <label class="form-check-label" for="roundTrip">Round Trip</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="tripType" id="multiCity" value="multiCity">
+                                            <label class="form-check-label" for="multiCity">Multi-City</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                   
-
-                        
-                        
-                    </div>
                 </div>
-                
             </div>
         </div>
 
-<!-- TOOLS SECTION -->
- 
-        <div class="container-fluid" id="tools">
-            <div class="mt-5">
-                <h1 class="text-center" id="tools-title">My Tools</h1>                
-            </div>   
-
-            <div class="row px-3 justify-content-center gap-5 mb-5 mt-4">
-
-                <div class="col-12 col-md-5 pt-md-4">
-                    <h3 class="text-center">Front End</h3> 
-              
-                     <div class="d-flex justify-content-center pt-2 gap-3">
-                        <img src="./images/logo-html.png" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-css.png" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-bootstrap.png" class="img-fluid" id="tools-image">
-                    </div>
-                     <div class="d-flex justify-content-center pt-3 gap-3">
-                        <img src="./images/logo-figma.png" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-trello.png" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-sublime.png" class="img-fluid" id="tools-image">                       
-                    </div>
+<!-- AVAILABLE FLIGHTS SECTION --> <!-- New section -->
+        <div class="container my-5" id="available-flights">
+            <div class="results-header">
+                <h2>Available Flights</h2>
+                <div class="sort-dropdown">
+                    <select class="form-select">
+                        <option selected>Sort by: Recommended</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="duration">Shortest Duration</option>
+                        <option value="departure">Earliest Departure</option>
+                    </select>
                 </div>
-
-                <div class="col-12 col-md-5 pt-md-4">
-                    <h3 class="text-center">Graphics</h3> 
-                
-                     <div class="d-flex justify-content-center pt-2 gap-3">
-                        <img src="./images/logo-psd.jpg" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-light.png" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-blender.png" class="img-fluid" id="tools-image">
-                    </div>
-                     <div class="d-flex justify-content-center pt-3 gap-3">
-                        <img src="./images/logo-cdr.png" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-vsco.png" class="img-fluid" id="tools-image">
-                        <img src="./images/logo-canva.jpg" class="img-fluid" id="tools-image">                       
-                    </div>
-                </div>
-
-      
             </div>
-        </div> 
-  
-
-<!-- CONTACT SECTION -->
-
-        <div class="container my-5" id="contact">
-            <div class="row justify-content-center gap-2 mt-5 mb-5">
-                <div class="col-10 order-2 order-md-1 col-md-5 my-1" id="contact-map-area">
-                    <img src="./images/contact-map.png" class="img-fluid" id="contact-map-image">
+            
+            <div class="row">
+                <!-- Filters Column -->
+                <div class="col-12 col-lg-3 mb-4">
+                    <div class="filter-card">
+                        <h5 class="filter-title">Filters</h5>
+                        
+                        <h6 class="mt-3">Price Range</h6>
+                        <div class="filter-option">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="price1" checked>
+                                <label class="form-check-label" for="price1">
+                                    Under $500
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-option">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="price2">
+                                <label class="form-check-label" for="price2">
+                                    $500 - $1000
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-option">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="price3">
+                                <label class="form-check-label" for="price3">
+                                    $1000 - $2000
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <h6 class="mt-4">Stops</h6>
+                        <div class="filter-option">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="stops0" checked>
+                                <label class="form-check-label" for="stops0">
+                                    Non-stop
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-option">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="stops1">
+                                <label class="form-check-label" for="stops1">
+                                    1 Stop
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <h6 class="mt-4">Departure Time</h6>
+                        <div class="filter-option">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="time1">
+                                <label class="form-check-label" for="time1">
+                                    Morning (6am - 12pm)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-option">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="time2" checked>
+                                <label class="form-check-label" for="time2">
+                                    Afternoon (12pm - 6pm)
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-outline-primary w-100 mt-4">Apply Filters</button>
+                    </div>
+                    
+                    <div class="filter-card">
+                        <h5 class="filter-title">Need Help?</h5>
+                        <p>Our customer service team is available 24/7 to assist with your booking.</p>
+                        <button class="btn search-btn w-100">Contact Support</button>
+                    </div>
                 </div>
-
-                <div class="col-10 order-1 order-md-2 col-md-5 my-1 " id="contact-form-area">
-
-                    <form  class="px-3 pt-3 mx-auto align-items-center" id="contact-form">   
-
-                        <h2>Contact Me</h2> 
-                        <p>Please let me know how I can help you.</p>
-                     
-                        <div>
-                          <label for="exampleFormControlInput1" class="form-label">Name</label>
-                          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
+                
+                <!-- Flight Results Column -->
+                <div class="col-12 col-lg-9">
+                    <!-- Flight 1 -->
+                    <div class="flight-card">
+                        <div class="flight-header">
+                            <div class="flight-airline">G3 Airlines • Flight #GA345</div>
+                            <div class="flight-price">$647</div>
                         </div>
-
-                        <div class="pt-1">
-                          <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="your.email@gmail.com">
+                        <div class="flight-body">
+                            <div class="flight-route">
+                                <div class="flight-time">
+                                    <div>JFK</div>
+                                    <div>08:30 AM</div>
+                                </div>
+                                <div class="flight-duration">
+                                    <div>10h 45m</div>
+                                    <div>────── ○ ──────</div>
+                                    <div class="flight-stops">Non-stop</div>
+                                </div>
+                                <div class="flight-time text-end">
+                                    <div>LHR</div>
+                                    <div>09:15 PM</div>
+                                </div>
+                            </div>
+                            <div class="flight-details">
+                                <div>
+                                    <div><strong>Class:</strong> Economy</div>
+                                    <div><strong>Aircraft:</strong> Boeing 787-9</div>
+                                </div>
+                                <div>
+                                    <button class="btn book-btn">Book Now</button>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="pt-1 mb-2">
-                          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                          <textarea class="form-control" id="contact-textarea" rows="3"></textarea>
+                    </div>
+                    
+                    <!-- Flight 2 -->
+                    <div class="flight-card">
+                        <div class="flight-header">
+                            <div class="flight-airline">SkyJet Airways • Flight #SJ722</div>
+                            <div class="flight-price">$724</div>
                         </div>
-
-                        <div class="text-center">
-                           <!-- <button class="my-4 btn" id="contact-form-button"><a href="https://www.google.com/"></a>Send 
-                           </button>-->  
-                           <a class="btn btn-primary my-4 contact-form-button" href="https://www.google.com/" role="button">Submit</a>
+                        <div class="flight-body">
+                            <div class="flight-route">
+                                <div class="flight-time">
+                                    <div>JFK</div>
+                                    <div>02:15 PM</div>
+                                </div>
+                                <div class="flight-duration">
+                                    <div>12h 20m</div>
+                                    <div>────── ○ ──────</div>
+                                    <div class="flight-stops">Non-stop</div>
+                                </div>
+                                <div class="flight-time text-end">
+                                    <div>LHR</div>
+                                    <div>02:35 AM</div>
+                                </div>
+                            </div>
+                            <div class="flight-details">
+                                <div>
+                                    <div><strong>Class:</strong> Premium Economy</div>
+                                    <div><strong>Aircraft:</strong> Airbus A350-900</div>
+                                </div>
+                                <div>
+                                    <button class="btn book-btn">Book Now</button>
+                                </div>
+                            </div>
                         </div>
-                                                                                       
-                    </form>
-
-                </div>               
+                    </div>
+                    
+                    <!-- Flight 3 -->
+                    <div class="flight-card">
+                        <div class="flight-header">
+                            <div class="flight-airline">Global Airways • Flight #GA189</div>
+                            <div class="flight-price">$589</div>
+                        </div>
+                        <div class="flight-body">
+                            <div class="flight-route">
+                                <div class="flight-time">
+                                    <div>JFK</div>
+                                    <div>11:45 AM</div>
+                                </div>
+                                <div class="flight-duration">
+                                    <div>14h 05m</div>
+                                    <div>─── ○ ───── ○ ───</div>
+                                    <div class="flight-stops">1 Stop (CDG)</div>
+                                </div>
+                                <div class="flight-time text-end">
+                                    <div>LHR</div>
+                                    <div>01:50 AM</div>
+                                </div>
+                            </div>
+                            <div class="flight-details">
+                                <div>
+                                    <div><strong>Class:</strong> Economy</div>
+                                    <div><strong>Aircraft:</strong> Airbus A330-300</div>
+                                </div>
+                                <div>
+                                    <button class="btn book-btn">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Flight 4 -->
+                    <div class="flight-card">
+                        <div class="flight-header">
+                            <div class="flight-airline">Oceanic Airlines • Flight #OA456</div>
+                            <div class="flight-price">$832</div>
+                        </div>
+                        <div class="flight-body">
+                            <div class="flight-route">
+                                <div class="flight-time">
+                                    <div>JFK</div>
+                                    <div>06:20 PM</div>
+                                </div>
+                                <div class="flight-duration">
+                                    <div>11h 30m</div>
+                                    <div>────── ○ ──────</div>
+                                    <div class="flight-stops">Non-stop</div>
+                                </div>
+                                <div class="flight-time text-end">
+                                    <div>LHR</div>
+                                    <div>06:50 AM</div>
+                                </div>
+                            </div>
+                            <div class="flight-details">
+                                <div>
+                                    <div><strong>Class:</strong> Business</div>
+                                    <div><strong>Aircraft:</strong> Boeing 777-300ER</div>
+                                </div>
+                                <div>
+                                    <button class="btn book-btn">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Flight 5 -->
+                    <div class="flight-card">
+                        <div class="flight-header">
+                            <div class="flight-airline">G3 Airlines • Flight #GA512</div>
+                            <div class="flight-price">$699</div>
+                        </div>
+                        <div class="flight-body">
+                            <div class="flight-route">
+                                <div class="flight-time">
+                                    <div>JFK</div>
+                                    <div>09:10 AM</div>
+                                </div>
+                                <div class="flight-duration">
+                                    <div>13h 15m</div>
+                                    <div>─── ○ ───── ○ ───</div>
+                                    <div class="flight-stops">1 Stop (FRA)</div>
+                                </div>
+                                <div class="flight-time text-end">
+                                    <div>LHR</div>
+                                    <div>10:25 PM</div>
+                                </div>
+                            </div>
+                            <div class="flight-details">
+                                <div>
+                                    <div><strong>Class:</strong> Economy</div>
+                                    <div><strong>Aircraft:</strong> Boeing 767-400</div>
+                                </div>
+                                <div>
+                                    <button class="btn book-btn">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination --> <!-- Added pagination for flight results -->
+                    <nav aria-label="Flight results pagination" class="mt-4">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
 
+<!-- REMOVED PROJECTS, TOOLS, AND CONTACT SECTIONS TO FOCUS ON FLIGHTS PAGE -->
+
+<!-- PROMOTION BANNER --> <!-- Added promotional section -->
+<div class="container-fluid py-4" style="background-color: #E0F000; color: #003B66;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-8">
+                <h4 class="mb-2">Travel with Confidence</h4>
+                <p class="mb-0">Free cancellation up to 24 hours before departure • COVID-19 safety measures • 24/7 customer support</p>
+            </div>
+            <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+                <button class="btn" style="background-color: #003B66; color: white;">Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- KEPT FOOTER AND BACK TO TOP BUTTON FROM ORIGINAL -->
      
         <button id="backToTop" class="btn btn-primary rounded-circle">
           ↑
