@@ -61,43 +61,85 @@
 	font-weight: bold;
 }
 
-#section-title{
-	color: #003B66;
-	font-size: 1.0rem;
-	font-weight: bold;
-}
-
-#carousel-img{
-	border-radius: 10px;
-}
+/*END OF LANDING*/
 
 
-.aboutme{
-	line-height: 20px;
-}
 
-#landing-button{
-	  background-color: #230854;
-	  border: 2px solid white;
-	  padding-left: 40px;
-	  padding-right: 40px;
-	  color: white;	
-	  cursor: pointer;
-	  font-size: 1.3rem;
-	  transition: 0.2s;
+/*CAROUSEL SLIDESHOW*/
+
+	#section-title{
+		color: #003B66;
+		font-size: 2.0rem;
+		font-weight: bold;
 	}
 
-#landing-button:hover {
-	  opacity: 0.8;
-	  border: 0px;
-	  background-color: white;
-	  color: #370088;
+	.carousel-inner {
+	  height: 60vh;
 	}
-	
-#landing-button:active {
-	  opacity: 0.4;
-	  color: black;
+
+	.carousel-item img {
+	  height: 100%;
+	  object-fit: cover;
 	}
+
+	/* Make carousel full screen */
+	#heroCarousel,
+	#heroCarousel .carousel-inner,
+	#heroCarousel .carousel-item {
+	  height: 100vh;
+	}
+
+	/* Make image fully cover */
+	.hero-img {
+	  height: 100%;
+	  object-fit: cover;
+	}
+
+	/* Dark overlay */
+	.carousel-item::before {
+	  content: "";
+	  position: absolute;
+	  inset: 0;
+	  background: rgba(0, 0, 0, 0.5);
+	  z-index: 1;
+	}
+
+	/* Caption positioning */
+	.hero-caption {
+	  z-index: 2;
+	  bottom: 50%;
+	  transform: translateY(50%);
+	}
+
+
+
+
+	.aboutme{
+		line-height: 20px;
+	}
+
+	#landing-button{
+		  background-color: #230854;
+		  border: 2px solid white;
+		  padding-left: 40px;
+		  padding-right: 40px;
+		  color: white;	
+		  cursor: pointer;
+		  font-size: 1.3rem;
+		  transition: 0.2s;
+		}
+
+	#landing-button:hover {
+		  opacity: 0.8;
+		  border: 0px;
+		  background-color: white;
+		  color: #370088;
+		}
+		
+	#landing-button:active {
+		  opacity: 0.4;
+		  color: black;
+		}
 
 
 /*PROJECTS*/
@@ -217,10 +259,7 @@
 	  color: black;
 	}
 
-#footer{
-	background-color: #370088;
-	color: white;
-}
+
 
 #backToTop {
   position: fixed;
@@ -260,4 +299,13 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+
+
+/*FOOTER SECTION*/
+
+#footer{
+	background-color: #003B66;
+	color: white;
 }
